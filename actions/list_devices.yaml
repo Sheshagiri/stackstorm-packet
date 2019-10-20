@@ -1,0 +1,31 @@
+---
+name: devices.list
+runner_type: "http-request"
+description: List all devices for a project.
+enabled: true
+entry_point: ''
+parameters:
+  auth:
+    type: string
+  headers:
+    type: object
+    default: {"content-type": "application/json"}
+  method:
+    default: GET
+    type: string
+    immutable: true
+  params:
+    type: object
+  timeout:
+    default: 10
+    type: integer
+  url:
+    default: http://{{ server }}/projects/{project}/devices
+    immutable: true
+    type: string
+  server:
+    type: string
+    required: true
+  project:
+    type: string
+    required: true

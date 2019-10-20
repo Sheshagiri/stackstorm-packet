@@ -1,0 +1,28 @@
+---
+name: facilities.list
+runner_type: "http-request"
+description: List available facilities.
+enabled: true
+entry_point: ''
+parameters:
+  auth:
+    type: string
+  headers:
+    type: object
+    default: {"content-type": "application/json"}
+  method:
+    default: GET
+    type: string
+    immutable: true
+  params:
+    type: object
+  timeout:
+    default: 10
+    type: integer
+  url:
+    default: http://{{ server }}/facilities
+    immutable: true
+    type: string
+  server:
+    type: string
+    required: true

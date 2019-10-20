@@ -1,0 +1,14 @@
+---
+ref: packet
+name : packet
+description : packet.net integrations.
+keywords:
+  - packet
+  - cloud
+  - libcloud
+  - servers
+  - baremetal machines
+  - baremetal servers
+version: 0.0.1
+author : Sheshagiri Rao Mallipedhi
+email : msheshagirirao@gmail.com
